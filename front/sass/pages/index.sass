@@ -4,6 +4,7 @@ $green: #05C489
 $green-hover: #09B47F
 $grey: #EDEDED
 $text: #292929
+$white: #ffffff
 
 $font-suisse-bold: SuisseIntl-Bold, sans-serif
 $font-suisse-reg: SuisseIntl-Regular, sans-serif
@@ -380,6 +381,10 @@ body
         z-index: 2
       &-reel
         background: url("../img/wheel-reel.png") no-repeat 0 0/contain
+        @media screen and (max-width: 600px) and (orientation: portrait)
+          background: url("../img/wheel-reel-mob.png") no-repeat 0 0/contain
+        @media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+          background: url("../img/wheel-reel-mob.png") no-repeat 0 0/contain
         width: 713px
         height: 713px
         top: 13px
@@ -400,93 +405,100 @@ body
         top: auto
         bottom: -140px
     &-txt
-      font-family: $font-suisse-bold
-      font-size: 65px
-      line-height: 74px
-      color: $grey
-      text-transform: uppercase
-      letter-spacing: 0.03em
-      width: 390px
       position: absolute
       top: 230px
       right: -484px
+      &-top
+        font-family: $font-suisse-bold
+        font-size: 65px
+        line-height: 74px
+        color: $grey
+        text-transform: uppercase
+        letter-spacing: 0.03em
+        width: 390px
+        margin: 0 0 40px 0
+      &-bottom
+        width: 367px
+        font-family: $font-suisse-reg
+        font-size: 16px
+        line-height: 28px
+        color: $grey
+        a
+          font-family: $font-suisse-reg
+          font-size: 16px
+          line-height: 28px
+          color: $grey
+          text-decoration: underline
+          &:hover
+            text-decoration: none
+
   &__infoMob
     display: none
   &__footer
     position: absolute
-    bottom: 75px
+    z-index: 5
+    bottom: 0
     left: 0
     right: 0
-    z-index: 4
-    height: 66px
+    height: 83px
     background: $blue
+    padding: 0 35px
     display: flex
-    justify-content: space-between
     align-items: center
-    padding: 0 30px
-    &-rules
-      font-family: $font-suisse-semb
-      font-size: 14px
-      color: $magenta
-      text-transform: uppercase
-      letter-spacing: 0.08em
-      text-decoration: underline
-      cursor: pointer
-      &:hover
-        text-decoration: none
-    &-icons
+    overflow: hidden
+    &-row
+      width: 100%
       display: flex
-      &-wrap
+      align-items: center
+      justify-content: space-between
+    &-text
+      max-width: 982px
+      font-family: $font-suisse-reg
+      font-size: 14px
+      line-height: 22px
+      color: $white
+      margin: 0 20px 0 0
+    &-info
+      display: flex
+      align-items: center
+      &-licensed
         display: flex
         align-items: center
-        &:first-child
-          margin-right: 39px
-          div
-            &:not(:last-child)
-              margin-right: 17px
-      &-age,
-      &-visa
-        background: url("../img/icon-21.svg") no-repeat 0 0/contain
-        width: 38px
-        height: 25px
-      &-applePay
-        background: url("../img/apple-pay.svg") no-repeat 0 0/contain
-        width: 57px
-        height: 27px
-      &-googlePay
-        background: url("../img/google-pay.svg") no-repeat 0 0/contain
-        width: 55px
-        height: 22px
-      &-visa
-        background: url("../img/visa.svg") no-repeat 0 0/contain
-      &-mcard
-        background: url("../img/mastercard.svg") no-repeat 0 0/contain
-        width: 37px
-        height: 22px
-      &-apple
-        background: url("../img/app-store.png") no-repeat 0 0/contain
-        width: 115px
-        height: 39px
-        margin-right: 10px
-      &-google
-        background: url("../img/google-play.png") no-repeat 0 0/contain
-        width: 129px
-        height: 39px
+        margin: 0 35px 0 0
+        &-img
+          &:not(:last-child)
+            margin: 0 17px 0 0
+      &-buttons
+        display: flex
+        align-items: stretch
+        &-apple
+          width: 114px
+          margin: 0 10px 0 0
+        &-google
+          width: 127px
   &__legal
+    //display: flex
+    display: none
     background: $grey
     font-family: $font-din
     font-size: 2.55vw
     color: #000
-    position: absolute
-    bottom: 0
-    left: 0
-    right: 0
     height: 75px
-    display: flex
     justify-content: center
     align-items: center
     padding-top: 3px
-    z-index: 4
+    z-index: 5
+  &__legal-desc
+    padding: 0 23px
+    z-index: 5
+    width: 100%
+    height: 160px
+    background: #ffffff
+    &-wrap
+      width: 100%
+      height: 100%
+      background: url("../img/warning.svg") no-repeat 50% center/contain
+
 
 .pulse-btn
   animation: 1.8s infinite pulse-btn ease-in-out

@@ -1,4 +1,12 @@
-@media screen and (min-height: 1300px)
+@media screen and (min-width: 2400px)
+  .sam
+    &__footer
+      height: 103px
+      &-info
+        transform-origin: right center
+        transform: scale(1.3)
+
+@media screen and (min-width: 2450px)
   .sam
     &__main
       &-left
@@ -8,11 +16,12 @@
         transform: scale(1.4)
         height: 990px
       &-txt
-        font-size: 85px
-        line-height: 94px
         top: 140px
         right: -755px
-        width: 500px
+        &-top
+          font-size: 85px
+          line-height: 94px
+          width: 500px
 
 @media screen and (max-width: 1920px) and (max-height: 1050px)
   .sam
@@ -30,9 +39,10 @@
       &-txt
         top: 240px
         right: -400px
-        font-size: 58px
-        line-height: 66px
-        width: 350px
+        &-top
+          font-size: 58px
+          line-height: 66px
+          width: 350px
 
 @media screen and (max-width: 1680px) and (max-height: 950px)
   .sam
@@ -46,6 +56,39 @@
     &__main
       &-txt
         right: -380px
+
+@media screen and (max-width: 1645px)
+  .sam
+    &__legal-desc
+      height: 130px
+    &__footer
+      &-text
+        max-width: 850px
+        font-size: 12px
+        line-height: 22px
+      &-info
+        &-licensed
+          margin: 0 25px 0 0
+          &-img
+            &:not(:last-child)
+              margin: 0 13px 0 0
+          &-one
+            width: 27px
+          &-two
+            width: 40px
+          &-three
+            width: 39px
+          &-fourth
+            width: 27px
+          &-five
+            width: 25px
+        &-buttons
+          &-apple
+            width: 80px
+            margin: 0 8px 0 0
+          &-google
+            width: 90px
+
 
 @media screen and (max-width: 1600px) and (max-height: 900px)
   .sam
@@ -69,12 +112,16 @@
       &-txt
         top: 260px
         right: -340px
-        font-size: 50px
-        line-height: 60px
-    &__footer
-      bottom: 60px
-    &__legal
-      height: 60px
+        &-top
+          font-size: 50px
+          line-height: 60px
+        &-bottom
+          width: 273px
+          font-size: 13px
+          line-height: 22px
+          a
+            font-size: 13px
+            line-height: 22px
 
 @media screen and (max-width: 1600px) and (max-height: 850px)
   .sam
@@ -124,6 +171,11 @@
           font-size: 15px
           padding: 15px 30px 11px
 
+@media screen and (max-width: 1400px)
+  .sam
+    &__legal-desc
+      height: 115px
+
 
 @media screen and (max-width: 1536px) and (max-height: 760px)
   .sam
@@ -155,11 +207,19 @@
         transform: scale(0.85)
         margin-bottom: -60px
       &-txt
-        font-size: 46px
-        line-height: 52px
         top: 275px
         right: -300px
-        width: 290px
+        &-top
+          font-size: 46px
+          line-height: 52px
+          width: 290px
+        &-bottom
+          width: 253px
+          font-size: 13px
+          line-height: 25px
+          a
+            font-size: 13px
+            line-height: 25px
 
 @media screen and (max-width: 1366px) and (max-height: 768px)
   .sam
@@ -216,49 +276,43 @@
         transform: scale(0.57)
         margin-bottom: -160px
       &-txt
-        font-size: 40px
-        line-height: 46px
-        top: 300px
         right: -160px
-        width: 250px
+        top: 260px
+        &-top
+          font-size: 40px
+          line-height: 46px
+          width: 250px
+          margin: 0 0 30px 0
+        &-bottom
+          width: 233px
+          font-size: 11px
+          line-height: 21px
+          a
+            font-size: 11px
+            line-height: 21px
+@media screen and (max-width: 1345px)
+  .sam
+    &__footer
+      &-text
+        max-width: 620px
+        font-size: 10px
+        line-height: 15px
+    &__legal-desc
+      display: none
+      &-wrap
+        background: none
+    &__legal
+      display: flex
+      height: 114px
+      font-size: 4.05vw
+      line-height: 51px
+      text-align: center
 
 @media screen and (max-width: 1280px)
   .sam
     &__main
       &-wrapper
         bottom: 55px
-    &__footer
-      bottom: 50px
-      &-rules
-        font-size: 12px
-      &-icons
-        &-wrap
-          &:first-child
-            margin-right: 20px
-            div
-              &:not(:last-child)
-                margin-right: 14px
-        &-age,
-        &-visa
-          width: 32px
-          height: 21px
-        &-applePay
-          width: 48px
-          height: 23px
-        &-googlePay
-          width: 46px
-          height: 18px
-        &-mcard
-          width: 31px
-          height: 18px
-        &-apple
-          width: 91px
-          height: 31px
-        &-google
-          width: 103px
-          height: 31px
-    &__legal
-      height: 50px
 
 @media screen and (max-width: 1280px) and (max-height: 800px)
   .sam
@@ -278,12 +332,19 @@
         transform: scale(0.7)
         margin-bottom: -110px
       &-txt
-        font-size: 44px
-        line-height: 50px
         top: 290px
         right: -210px
-        width: 270px
-
+        &-top
+          font-size: 44px
+          line-height: 50px
+          width: 270px
+        &-bottom
+          width: 248px
+          font-size: 12px
+          line-height: 23px
+          a
+            font-size: 12px
+            line-height: 23px
 @media screen and (max-width: 1280px) and (max-height: 750px)
   .sam
     &__main
@@ -328,11 +389,19 @@
         transform: scale(0.5)
         margin-bottom: -180px
       &-txt
-        font-size: 38px
-        line-height: 44px
-        width: 240px
-        top: 310px
+        top: 285px
         right: -140px
+        &-top
+          font-size: 38px
+          line-height: 44px
+          width: 240px
+        &-bottom
+          width: 231px
+          font-size: 11px
+          line-height: 18px
+          a
+            font-size: 11px
+            line-height: 18px
 
 @media screen and (width: 1259px) and (height: 1024px)
   .sam
@@ -341,6 +410,41 @@
         left: -232px
       &-txt
         right: -279px
+
+@media screen and (max-width: 1185px)
+  .sam
+    &__footer
+      height: 90px
+      &-text
+        font-size: 10px
+        line-height: 17px
+        max-width: 620px
+        margin: 0 15px 0 0
+      &-info
+        display: flex
+        flex-direction: column
+        &-licensed
+          margin: 0 0 15px 0
+          &-img
+            &:not(:last-child)
+              margin: 0 13px 0 0
+          &-one
+            width: 24px
+          &-two
+            width: 34px
+          &-three
+            width: 37px
+          &-fourth
+            width: 23px
+          &-five
+            width: 24px
+        &-buttons
+          &-apple
+            width: 90px
+            margin: 0 8px 0 0
+          &-google
+            width: 100px
+
 
 @media screen and (width: 1180px) and (height: 820px)
   .sam
@@ -414,17 +518,22 @@
         transform: scale(0.65)
         margin-bottom: -140px
       &-txt
-        font-size: 40px
-        line-height: 46px
-        top: 300px
+        top: 250px
         right: -160px
-        width: 240px
+        &-top
+          font-size: 40px
+          line-height: 46px
+          width: 240px
+        &-bottom
+          width: 213px
+          font-size: 11px
+          line-height: 21px
+          a
+            font-size: 11px
+            line-height: 21px
 
-@media screen and (max-width: 1024px)
-  .sam
-    &__footer
-      height: 56px
-      padding: 0 20px
+
+
 
 @media screen and (max-width: 1045px) and (orientation: landscape)
   .sam
@@ -454,14 +563,23 @@
         transform: scale(0.6)
         margin-bottom: -160px
       &-txt
-        font-size: 36px
-        line-height: 42px
-        width: 230px
-        top: 310px
+        top: 285px
         right: -130px
+        &-top
+          font-size: 36px
+          line-height: 42px
+          width: 230px
+          margin: 0 0 20px 0
+        &-bottom
+          width: 196px
+          font-size: 10px
+          line-height: 19px
+
 
 @media screen and (max-width: 1024px) and (orientation: portrait)
   .sam
+    &__footer
+      padding: 0 20px
     &__main
       &-wrapper
         position: static
@@ -479,11 +597,15 @@
         left: 30px
         right: 30px
         margin: auto
-        width: auto
-        text-align: center
-        font-size: 65px
-        line-height: 75px
-        text-shadow: 0 0 20px rgba(0,0,0,.7)
+
+        &-top
+          width: auto
+          text-align: center
+          font-size: 65px
+          line-height: 75px
+          text-shadow: 0 0 20px rgba(0,0,0,.7)
+        &-bottom
+          display: none
       &-video
         &-bg
           width: 190%
@@ -495,6 +617,8 @@
       &-left
         &-try
           top: -96px
+
+
 
 @media screen and (max-width: 900px) and (orientation: portrait)
   .sam
@@ -565,15 +689,13 @@
         transform: scale(0.85)
         margin-bottom: -70px
       &-txt
-        font-size: 45px
-        line-height: 50px
         top: 190px
         left: 100px
         right: 100px
-    &__legal
-      height: 40px
-    &__footer
-      bottom: 40px
+        &-top
+          font-size: 45px
+          line-height: 50px
+
 
 @media screen and (max-width: 900px) and (max-height: 1050px)
   .sam
@@ -581,7 +703,15 @@
       &-txt
         top: 150px
 
-@media screen and (max-width: 768px) and (orientation: portrait)
+
+
+@media screen and (max-width: 860px) and (orientation: portrait)
+  .sam
+    &__legal
+      font-size: 4.7vw
+      line-height: 45px
+
+@media screen and (max-width: 1040px) and (orientation: portrait)
   .sam
     height: auto
     &__main
@@ -646,6 +776,8 @@
         display: none
     &__infoMob
       display: flex
+      flex-direction: column
+      align-items: center
       justify-content: center
       position: relative
       background: url("../img/info-bg-mob.jpg") repeat 0 0
@@ -714,25 +846,43 @@
         bottom: 0
         right: 0
         z-index: 2
+      &-rules
+        position: relative
+        z-index: 3
+        max-width: 370px
+        text-align: center
+        font-family: $font-suisse-reg
+        font-size: 12px
+        line-height: 22px
+        color: $white
+        a
+          color: $white
+          text-decoration: underline
       &-txt
         background: url("../img/popup-small.png") no-repeat 0 0/contain
+        display: flex
+        flex-direction: column
+        align-items: center
         width: 583px
         height: 783px
-        padding: 128px 155px 120px
+        padding: 128px 15px 120px
         z-index: 1
+        margin: 0 0 20px 0
         &-title
           font-family: $font-suisse-semb
-          font-size: 43px
+          font-size: 40px
           line-height: 43px
           color: $text
           letter-spacing: 0.03em
           text-align: center
         &-list
-          margin-top: 37px
+          margin-top: 60px
+          margin-right: -45px
+          max-width: 340px
         &-item
           font-family: $font-suisse-reg
-          font-size: 32px
-          line-height: 34px
+          font-size: 28px
+          line-height: 33px
           color: $text
           letter-spacing: 0.03em
           margin-bottom: 29px
@@ -748,8 +898,9 @@
           &:last-child
             margin-bottom: 0
         &-more
+          display: block
           text-align: center
-          margin-top: 80px
+          margin-top: 45px
           font-family: $font-suisse-semb
           font-size: 22px
           text-transform: uppercase
@@ -759,49 +910,62 @@
           &:hover
             text-decoration: none
     &__footer
-      position: static
-      height: auto
-      padding: 84px 32px 97px
-      &-rules
-        display: none
-      &-icons
-        flex-direction: column
-        align-items: center
+        position: static
+        min-height: 110px
         width: 100%
-        &-wrap
-          &:first-child
-            margin-right: 0
-            margin-bottom: 73px
-            div
+        padding: 12px 20px
+        &-row
+          flex-direction: row
+        &-info
+          margin: 0
+          &-licensed
+            margin: 0 0 15px 0
+            &-img
               &:not(:last-child)
-                margin-right: 45px
-        &-age,
-        &-visa
-          width: 86px
-          height: 57px
-        &-applePay
-          width: 122px
-          height: 57px
-        &-googlePay
-          width: 133px
-          height: 53px
-        &-mcard
-          width: 82px
-          height: 50px
-        &-apple
-          width: 313px
-          height: 106px
-          margin-right: 26px
-        &-google
-          width: 351px
-          height: 106px
-    &__legal
-      position: static
-      width: 100%
-      height: auto
-      font-size: 6.7vw
-      text-align: center
-      padding: 11px 0 10px
+                margin: 0 13px 0 0
+            &-one
+              width: 23px
+            &-two
+              width: 34px
+            &-three
+              width: 36px
+            &-fourth
+              width: 23px
+            &-five
+              width: 23px
+          &-buttons
+            &-apple
+              width: 89.18px
+              margin: 0 8px 0 0
+            &-google
+              width: 100.87px
+        &-text
+          font-size: 11px
+          line-height: 18px
+          max-width: 100%
+          margin: 0 35px 0 0
+
+@media screen and (min-width: 900px) and (orientation: portrait)
+  .sam
+    &__main
+      &-wrapper
+        margin-top: 240px
+      &-wheel
+        transform: scale(0.85)
+      &-left
+        &-try
+          transform-origin: top center
+          transform: scale(1.2) translate(50px, -50px)
+    &__infoMob
+      &-coala
+        transform: scale(1.2)
+
+@media screen and (max-width: 760px) and (orientation: portrait)
+  .sam
+    &__footer
+      &-text
+        font-size: 8px
+        line-height: 15px
 
 @media screen and (max-width: 720px) and (orientation: portrait)
   .sam
@@ -811,19 +975,6 @@
     &__infoMob
       &-coala
         left: -30px
-    &__footer
-      &-icons
-        &-wrap
-          &:first-child
-            div
-              &:not(:last-child)
-                margin-right: 35px
-        &-apple
-          width: 293px
-          height: 100px
-        &-google
-          width: 331px
-          height: 100px
 
 @media screen and (max-width: 699px) and (orientation: portrait)
   .sam
@@ -907,11 +1058,12 @@
       &-wheel
         transform: scale(0.43)
       &-txt
-        font-size: 25px
-        line-height: 27px
         left: 40px
         right: 40px
         top: 82px
+        &-top
+          font-size: 25px
+          line-height: 27px
     &__infoMob
       padding-bottom: 20px
       margin-top: -152px
@@ -959,35 +1111,50 @@
         &-more
           font-size: 13px
           margin-top: 41px
+
+@media screen and (max-width: 600px) and (orientation: portrait)
+  .sam
     &__footer
-      padding: 41px 15px 47px
-      &-icons
-        &-wrap
-          &:first-child
-            margin-bottom: 35px
-            div
-              &:not(:last-child)
-                margin-right: 23px
-        &-age,
-        &-visa
-          width: 42px
-          height: 28px
-        &-applePay
-          width: 60px
-          height: 28px
-        &-googlePay
-          width: 65px
-          height: 26px
-        &-mcard
-          width: 40px
-          height: 24px
-        &-apple
-          width: 156px
-          height: 53px
-          margin-right: 12px
-        &-google
-          width: 175px
-          height: 53px
+      position: static
+      min-height: 335px
+      width: 100%
+      padding: 25px 0
+      &-row
+        flex-direction: column-reverse
+      &-info
+        margin: 0 0 20px 0
+        &-licensed
+          margin: 0 0 20px 0
+          &-img
+            &:not(:last-child)
+              margin: 0 22px 0 0
+          &-one
+            width: 39px
+          &-two
+            width: 56px
+          &-three
+            width: 60px
+          &-fourth
+            width: 38px
+          &-five
+            width: 39px
+        &-buttons
+          &-apple
+            width: 145px
+            margin: 0 13px 0 0
+          &-google
+            width: 164px
+      &-text
+        font-size: 12px
+        line-height: 20px
+        max-width: 321px
+        margin: 0 auto
+    &__legal
+      position: static
+      min-height: 113px
+      font-size: 6.4vw
+      line-height: 28px
+      padding: 0 19px
 
 @media screen and (max-width: 445px) and (orientation: portrait)
   .sam
@@ -1015,20 +1182,17 @@
         bottom: 94%
       &-arrow
         top: -63px
+
+@media screen and (max-width: 340px) and (orientation: portrait)
+  .sam
     &__footer
-      &-icons
-        &-wrap
-          &:first-child
-            div
-              &:not(:last-child)
-                margin-right: 18px
-        &-apple
-          width: 147px
-          height: 50px
-          margin-right: 10px
-        &-google
-          width: 165px
-          height: 50px
+      min-height: 355px
+      &-info
+        transform: scale(.87)
+        margin: 0 0 5px 0
+      &-text
+        max-width: 276px
+
 
 @media screen and (max-width: 320px) and (orientation: portrait)
   .sam
@@ -1067,8 +1231,9 @@
       &-wheel
         transform: scale(0.36)
       &-txt
-        font-size: 22px
-        line-height: 26px
+        &-top
+          font-size: 22px
+          line-height: 26px
     &__infoMob
       margin-top: -190px
       &:before
@@ -1086,35 +1251,6 @@
       &-leaf-4
         width: 88px
         height: 102px
-    &__footer
-      padding: 30px 15px 33px
-      &-icons
-        &-wrap
-          &:first-child
-            margin-bottom: 25px
-            div
-              &:not(:last-child)
-                margin-right: 18px
-        &-age,
-        &-visa
-          width: 36px
-          height: 24px
-        &-applePay
-          width: 52px
-          height: 24px
-        &-googlePay
-          width: 56px
-          height: 22px
-        &-mcard
-          width: 34px
-          height: 20px
-        &-apple
-          width: 130px
-          height: 44px
-          margin-right: 10px
-        &-google
-          width: 146px
-          height: 44px
 
 @media screen and (max-width: 954px) and (orientation: landscape) and (max-height: 770px)
   .sam
@@ -1227,47 +1363,37 @@
         &-light
           animation: none
       &-txt
-        font-size: 26px
-        line-height: 32px
-        width: 160px
         top: 365px
         right: 40px
+        &-top
+          font-size: 26px
+          line-height: 32px
+          width: 160px
+
       &-wrapper
         bottom: 37px
-    &__footer
-      height: 40px
-      padding: 0 10px
-      bottom: 35px
-      &-rules
-        font-size: 10px
-      &-icons
-        &-wrap
-          &:first-child
-            margin-right: 10px
-            div
-              &:not(:last-child)
-                margin-right: 10px
-        &-age,
-        &-visa
-          width: 26px
-          height: 17px
-        &-applePay
-          width: 41px
-          height: 19px
-        &-googlePay
-          width: 41px
-          height: 16px
-        &-mcard
-          width: 24px
-          height: 14px
-        &-apple
-          width: 77px
-          height: 26px
-        &-google
-          width: 86px
-          height: 26px
+
+@media screen and (max-width: 920px) and (max-height: 450px)
+  .sam
+    &__legal-desc
+      display: none
     &__legal
-      height: 35px
+      padding: 0 15px
+      font-size: 2.5vw
+      line-height: 10px
+      height: 44px
+    &__footer
+      bottom: 0
+      padding: 0 15px
+      height: 75px
+      &-text
+        font-size: 8px
+        line-height: 14px
+        margin: 0
+      &-info
+        transform-origin: right center
+        transform: scale(0.8)
+
 
 @media screen and (max-width: 780px) and (orientation: landscape)
   .sam
@@ -1285,6 +1411,13 @@
       &-wheel
         transform: scale(0.3)
         margin-bottom: -290px
+
+@media screen and (max-width: 765px) and (orientation: landscape)
+  .sam
+    &__footer
+      &-text
+        font-size: 8px
+        line-height: 14px
 
 @media screen and (max-width: 670px) and (orientation: landscape)
   .sam
@@ -1315,6 +1448,13 @@
           transform-origin: right bottom
           transform: scale(0.8)
 
+@media screen and (max-width: 636px) and (orientation: landscape)
+  .sam
+    &__footer
+      &-text
+        font-size: 6px
+        line-height: 13px
+
 @media screen and (max-width: 570px) and (orientation: landscape)
   .sam
     &__main
@@ -1333,10 +1473,6 @@
         margin-bottom: -300px
       &-txt
         right: 90px
-    &__legal
-      height: 29px
-    &__footer
-      bottom: 29px
 
 @media screen and (max-height: 280px)
   .sam
@@ -1356,6 +1492,7 @@
         transform: scale(0.25)
         margin-bottom: -310px
       &-txt
-        font-size: 22px
-        line-height: 26px
         top: 370px
+        &-top
+          font-size: 22px
+          line-height: 26px
