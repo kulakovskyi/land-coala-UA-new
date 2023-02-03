@@ -25,11 +25,11 @@ let triesCounter = 0
 //     rules.classList.remove('hide')
 // })
 
-// mobRulesBtn.addEventListener('click', () => {
-//     overlay.classList.remove('opacity-overlay')
-//     rules.classList.remove('hide')
-//     overflow.style.overflow = 'hidden'
-// })
+mobRulesBtn.addEventListener('click', () => {
+    overlay.classList.remove('opacity-overlay')
+    rules.classList.remove('hide')
+    overflow.style.overflow = 'hidden'
+})
 
 popupClose.addEventListener('click', () => {
     overlay.classList.add('opacity-overlay')
