@@ -9,22 +9,13 @@ const playBtn = document.querySelector('.sam__main-wheel-btn'),
       popupFirstBtn = document.querySelector('.sam__firstWin-btn'),
       popupSecond = document.querySelector('.sam__secondWin'),
       popupSecondRules = document.querySelector('.sam__secondWin-rules'),
-      rules = document.querySelector('.sam__rules'),
-      footerRulesBtn = document.querySelector('.sam__footer-rules'),
-      mobRulesBtn = document.querySelector('.sam__infoMob-txt-more'),
       overflow = document.querySelector('body'),
-      popupClose = document.querySelector('.sam__rules-close'),
       video = document.querySelector('.sam__main-video-bg'),
       wrapper = document.querySelector('.sam'),
       totalTriesCounter = 2
 
 let triesCounter = 0
 
-popupClose.addEventListener('click', () => {
-    overlay.classList.add('opacity-overlay')
-    rules.classList.add('hide')
-    overflow.style.overflow = 'unset'
-})
 
 playBtn.addEventListener('click', () => {
     if (triesCounter === 0) {
@@ -98,8 +89,6 @@ function doAfterSecondRotation() {
     wrapper.style.pointerEvents = 'auto'
     popupSecondRules.addEventListener('click', () => {
         popupSecond.classList.add('hide')
-        rules.classList.add('popup-win')
-        rules.classList.remove('hide')
     })
 }
 

@@ -80,8 +80,8 @@ body
       right: 56px
     &-title
       font-family: $font-suisse-semb
-      font-size: 16px
-      line-height: 20px
+      font-size: 13px
+      line-height: 15px
       color: $text
       text-transform: uppercase
       letter-spacing: 0.03em
@@ -114,7 +114,11 @@ body
     &-info
       top: 70px
       bottom: 68px
+    &-try
+      margin-top: -3px
+      margin-bottom: 5px
     &-sum
+      margin-top: 0
       font-size: 47px
       line-height: 75px
       position: relative
@@ -144,92 +148,6 @@ body
       cursor: pointer
       &:hover
         text-decoration: none
-  &__rules
-    background: url("../img/popup-big.png") no-repeat 0 0/contain
-    width: 850px
-    height: 635px
-    position: relative
-    &-close
-      position: absolute
-      top: 25px
-      right: 17px
-      width: 52px
-      height: 52px
-      background: #D4D7DA
-      border-radius: 50px
-      display: flex
-      justify-content: center
-      align-items: center
-      cursor: pointer
-      &:before,
-      &:after
-        content: ""
-        width: 4px
-        height: 29px
-        background: $text
-      &:before
-        transform: rotate(45deg) translateX(2px)
-      &:after
-        transform: rotate(-45deg) translateX(-2px)
-    &-btn
-      padding: 17px 46px 15px
-      position: absolute
-      left: 140px
-      bottom: 120px
-      display: none
-    &-txt
-      position: absolute
-      top: 140px
-      bottom: 131px
-      left: 140px
-      right: 140px
-      overflow-x: hidden
-      overflow-y: scroll
-      padding-right: 50px
-      &::-webkit-scrollbar
-        width: 3px
-        background: #BFBFBF
-      &::-webkit-scrollbar-thumb
-        background: $text
-      &-title
-        font-family: $font-suisse-semb
-        font-size: 22px
-        line-height: 22px
-        color: $text
-        text-transform: uppercase
-        letter-spacing: 0.03em
-      &-list
-        margin: 25px 0 0 20px
-      &-item,
-      &-more
-        font-family: $font-suisse-med
-        font-size: 14px
-        line-height: 18px
-        color: $text
-        list-style-type: disc
-        letter-spacing: 0.02em
-        margin-bottom: 15px
-        &:last-child
-          margin-bottom: 0
-      &-info
-        font-family: $font-suisse-bold
-        color: $magenta
-        margin: 20px 0 40px
-      &-more
-        margin: 15px 0 0
-        a
-          color: $magenta
-          text-decoration: underline
-          word-wrap: break-word
-          &:hover
-            text-decoration: none
-  .popup-win
-    .sam__rules-close
-      display: none
-    .sam__rules-txt
-      bottom: 200px
-    .sam__rules-btn
-      display: inline-block
   &__main
     height: 100%
     position: relative
